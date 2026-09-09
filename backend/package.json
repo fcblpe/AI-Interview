@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch -r ./src/polyfill.ts src/server.ts",
+    "start": "bun -r ./src/polyfill.ts src/server.ts"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/bun": "latest",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.2.0",
+    "@types/ws": "^8.18.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@google/genai": "^2.16.0",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "imagekit": "^6.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.2",
+    "multer": "^2.2.0",
+    "pdf-parse": "^2.4.5",
+    "ws": "^8.21.3"
+  }
+}
