@@ -11,13 +11,24 @@ const [lastName, setLastName] = React.useState("");
 const [email, setEmail] = React.useState("");
 const [password, setPassword] = React.useState("");
 
+const  handleSubmit =async(e)=>{
+  e.preventDefault();
+  const responce= await fetch("http://localhost:5000/auth/register",{
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+   body: JSON.stringify({
+  email,
+  password,
+  username: firstName,
+  fullname: `${firstName} ${lastName}`,
+}),
+  })
+  const data= await responce.json()
+  console.log(data);
 
-
-
-
-
-
-
+}
 
 
 
@@ -103,18 +114,9 @@ className="w-3 h-3 cursor-pointer"
   </p>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-<button className='bg-white w-94 mt-6 flex items-center ml-10 py-2 rounded-lg justify-center mb-10'>
+<button
+onClick={handleSubmit}
+ className='bg-white w-94 mt-6 flex items-center ml-10 py-2 rounded-lg justify-center mb-10'>
   submit
 </button>
 
