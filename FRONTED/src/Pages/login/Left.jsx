@@ -32,9 +32,8 @@ const  handleSubmit =async(e)=>{
 
 
 
-
   return (
-  <div className="min-h-screen flex items-start justify-start pl-20 pt-8 ">
+  <div className="min-h-screen flex items-start justify-start pl-25 pt-8 bg-[#0a0909] h-screen w-full">
   <div className=" w-120 bg-[#0e0d0d] border border-[#2a2a2a] rounded-md shadow-[0_0_30px_rgba(0,0,0,0.8)]">
     <h1 className='text-white text-3xl pt-5 pl-4 ml-6 pr-9'>Create an account</h1>
     <p className='text-gray-400 tracking-light pt-1 pl-4 ml-6 '>Brainstorm in chat, build in cowork</p>

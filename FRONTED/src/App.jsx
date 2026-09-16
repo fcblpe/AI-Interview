@@ -1,9 +1,14 @@
 import React from 'react'
-import Login from './Pages/Login'
+import Login from './Pages/login/Login'
+import Page from './Pages/Dashboard/Page'
+
+
+
 const App = () => {
   return (
-    <div className='bg-[#0a0909] h-screen w-full '>
-      <Login/>
+  <div>
+      {/* <Login/> */}
+      <Page/>
     </div>
   )
 }
